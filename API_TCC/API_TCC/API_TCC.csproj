@@ -138,8 +138,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Base\Controller_integracao_base.cs" />
-    <Compile Include="Controllers\Controller_eventos.cs" />
+    <Compile Include="Controllers\DivulgadoresController.cs" />
+    <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\Controller_integracao_ef.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\Database\Context_db.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">

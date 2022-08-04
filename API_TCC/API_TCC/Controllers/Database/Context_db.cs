@@ -13,7 +13,7 @@ namespace API_TCC.Controllers.Database
         {
 
         }
-
+        
         public DbSet<Model_eventos> Eventos { get; set; }
         public DbSet<Model_usuarios> Usuarios { get; set; }
         public DbSet<Model_divulgadores> Divulgadores { get; set; }

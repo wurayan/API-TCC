@@ -1,6 +1,7 @@
 ﻿using API_TCC.Models.Base;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,7 +9,7 @@ namespace API_TCC.Models
 {
     public class Model_eventos : Model_base
     {
-
+        [Key]
         public int Id { get; set; }
         public string Evento_nome { get; set; }
         public DateTime Evento_data { get; set; }
