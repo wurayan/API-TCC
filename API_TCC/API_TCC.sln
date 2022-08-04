@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_TCC", "API_TCC\API_TCC.csproj", "{A844877B-096F-4505-9E12-BED3A401606E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A844877B-096F-4505-9E12-BED3A401606E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A844877B-096F-4505-9E12-BED3A401606E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A844877B-096F-4505-9E12-BED3A401606E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A844877B-096F-4505-9E12-BED3A401606E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B17AAD37-99E5-4A43-A879-242289141A61}
+	EndGlobalSection
+EndGlobal
