@@ -22,7 +22,7 @@ namespace API_TCC.Controllers
             var context = new Context_db();
             var obj = context.Eventos.SingleOrDefault<Model_eventos>(x => x.Id == id);
             context.Eventos.Remove(obj);
-            return default;
+            return context.SaveChanges() > 0;
         }
         internal override bool Editar_evento(Model_eventos evento, int id)
         {
@@ -65,7 +65,7 @@ namespace API_TCC.Controllers
             var context = new Context_db();
             var obj = context.Usuarios.SingleOrDefault<Model_usuarios>(x => x.Usuario_Id == id);
             context.Usuarios.Remove(obj);
-            return default;
+            return context.SaveChanges() > 0;
         }
         internal override bool Editar_usuario(Model_usuarios usuario, int id)
         {
@@ -107,7 +107,7 @@ namespace API_TCC.Controllers
             var context = new Context_db();
             var obj = context.Divulgadores.SingleOrDefault<Model_divulgadores>(x => x.Div_Id == id);
             context.Divulgadores.Remove(obj);
-            return default;
+            return context.SaveChanges() > 0;
         }
         internal override bool Editar_divulgador(Model_divulgadores divulgador, int id)
         {

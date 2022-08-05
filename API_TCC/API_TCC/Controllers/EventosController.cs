@@ -8,17 +8,20 @@ using System.Web.Http;
 
 namespace API_TCC.Controllers
 {
-    [Route("Api/Eventos")]
+    [RoutePrefix("Api")]
     public class EventosController : ApiController
     {
+        [Route("Eventos/{id}")]
         public Model_eventos Get(int id)
         {
             return Instances.Current.Integracao.Retornar_evento_unico(id);
         }
+        [Route("Eventos")]
         public List<Model_eventos> Get()
         {
             return Instances.Current.Integracao.Retornar_todos_eventos();
         }
+        [Route("Eventos")]
         public string Post([FromBody] Model_eventos evento)
         {
             if (Instances.Current.Integracao.Criar_evento(evento))
@@ -26,7 +29,7 @@ namespace API_TCC.Controllers
             else
                 return "Não foi possível criar o evento.";
         }
-
+        [Route("Eventos/{id}")]
         public string Put([FromBody] Model_eventos evento, int id)
         {
             if (Instances.Current.Integracao.Editar_evento(evento, evento.Id = id))
@@ -34,6 +37,7 @@ namespace API_TCC.Controllers
             else
                 return "Não foi possível editar o evento.";
         }
+        [Route("Eventos/{id}")]
         public string Delete(int id)
         {
             if (Instances.Current.Integracao.Deletar_evento(id))
@@ -41,5 +45,6 @@ namespace API_TCC.Controllers
             else
                 return "Não foi possível apagar o evento.";
         }
+       
     }
 }
